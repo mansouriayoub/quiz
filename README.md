@@ -1,2 +1,7 @@
 # Quiz template
-![GitHub Logo](/img/quizTemplate.png)
+
+## Template page
+![Template](/quizTemplate.PNG)
+
+## Modal score after submit answers
+![Template Modal](/quizTemplateScoreModal.PNG)
