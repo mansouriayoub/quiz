@@ -1,6 +1,8 @@
 # Quiz template
 
-https://mansouriayoub.github.io/quiz/
+This is a template quiz app, build by HTML5/CSS3(Bootstrap4)/JavaScript
+
+LIVE PREVIEW => https://mansouriayoub.github.io/quiz/
 
 ## Template page
 ![Template](img/quizTemplate.PNG)
