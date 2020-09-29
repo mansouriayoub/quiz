@@ -1,7 +1,7 @@
 # Quiz template
 
 ## Template page
-![Template](/quizTemplate.PNG)
+![Template](img/quizTemplate.PNG)
 
 ## Modal score after submit answers
-![Template Modal](/quizTemplateScoreModal.PNG)
+![Template Modal](img/quizTemplateScoreModal.PNG)
