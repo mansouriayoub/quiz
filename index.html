@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Tamplate</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <div class="intro py-3 bg-white text-center">
+        <div class="container">
+          <h2 class="text-info display-3">Quiz</h2>
+        </div>
+      </div>
+
+      <!-- todo: make result shows like a modal (popup modal) -->
+      <!-- modal section -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- result section -->
+              <div class="result py-4 d-none bg-light text-center">
+                <div class="container lead">
+                  <p>
+                    Your score:
+                    <span class="text-primary display-4 p-3">0%</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- form quiz section -->
+      <form id="quiz-form">
+        <div class="">
+          <p class="lead"><span class="dark">1.</span> Question?</p>
+          <div class="form-check text-dark">
+            <input type="radio" name="q1" value="A" checked />
+            <label class="form-check-label"> Answer 1 </label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q1" value="B" />
+            <label class="form-check-label"> Answer 2 </label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q1" value="C" />
+            <label class="form-check-label"> Answer 3 </label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q1" value="D" />
+            <label class="form-check-label"> Answer 4 </label>
+          </div>
+        </div>
+        <div class="">
+          <p class="lead"><span class="dark">2.</span> Question?</p>
+          <div class="form-check text-dark">
+            <input type="radio" name="q2" value="A" checked />
+            <label class="form-check-label">Answer 1</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q2" value="B" />
+            <label class="form-check-label">Answer 2</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q2" value="C" />
+            <label class="form-check-label">Answer 3</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q2" value="D" />
+            <label class="form-check-label">Answer 4</label>
+          </div>
+        </div>
+        <div class="">
+          <p class="lead"><span class="dark">3.</span> Question?</p>
+          <div class="form-check text-dark">
+            <input type="radio" name="q3" value="A" checked />
+            <label class="form-check-label">Answer 1</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q3" value="B" />
+            <label class="form-check-label">Answer 2</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q3" value="C" />
+            <label class="form-check-label">Answer 3</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q3" value="D" />
+            <label class="form-check-label">Answer 4</label>
+          </div>
+        </div>
+        <div class="">
+          <p class="lead"><span class="dark">4.</span> Question?</p>
+          <div class="form-check text-dark">
+            <input type="radio" name="q4" value="A" checked />
+            <label class="form-check-label">Answer 1</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q4" value="B" />
+            <label class="form-check-label">Answer 2</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q4" value="C" />
+            <label class="form-check-label">Answer 3</label>
+          </div>
+          <div class="form-check text-dark">
+            <input type="radio" name="q4" value="D" />
+            <label class="form-check-label">Answer 4</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <input
+            type="submit"
+            class="btn btn-info"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

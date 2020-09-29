@@ -1,0 +1,19 @@
+.lead {
+  color: crimson;
+  font-weight: bolds;
+}
+
+form {
+  background-color: lemonchiffon;
+  margin: 20px;
+  padding: 20px;
+}
+
+.dark {
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-info {
+  margin: 20px;
+}
