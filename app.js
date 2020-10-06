@@ -1,4 +1,4 @@
-const correctAnswers = ['C', 'B', 'A', 'B'];
+const correctAnswers = ['C', 'B', 'A', 'D'];
 const form = document.querySelector('#quiz-form');
 const result = document.querySelector('.result');
 
@@ -32,7 +32,7 @@ form.addEventListener('submit', e => {
         } else {
             output++;
         }
-    }, 10);
+    }, 25);
 
     // modal trigger
     $('#myModal').on('shown.bs.modal', function () {
